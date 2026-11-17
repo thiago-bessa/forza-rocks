@@ -4,7 +4,7 @@
  * Each track accepts two optional direct links:
  *   official: "https://www.youtube.com/watch?v=..."   (official music video)
  *   live:     "https://www.youtube.com/watch?v=..."   (live performance)
- * When a link is missing, the page falls back to a YouTube search for it.
+ * When a link is missing, the page shows a dash instead of a button.
  *
  * Optional labels shown on the buttons:
  *   officialType: "video" | "audio" | "lyric" | "visualizer"

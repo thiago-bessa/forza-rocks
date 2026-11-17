@@ -35,10 +35,6 @@
     });
   }
 
-  function ytSearch(query) {
-    return "https://www.youtube.com/results?search_query=" + encodeURIComponent(query);
-  }
-
   const TYPE_LABELS = {
     audio: "Audio", lyric: "Lyric", visualizer: "Visualizer", video: "",
     pro: "", tv: "TV", session: "Session", fan: "Fan cam"
@@ -50,8 +46,7 @@
       const type = track[kind + "Type"];
       return { url: direct, direct: true, tag: (type && TYPE_LABELS[type]) || "" };
     }
-    const suffix = kind === "official" ? "official video" : "live";
-    return { url: ytSearch(track.artist + " " + track.title + " " + suffix), direct: false, tag: "Search" };
+    return null; // no direct link found: render no button
   }
 
   function renderNav(activeKey) {
@@ -125,6 +120,7 @@
   }
 
   function button(link, icon, text, aria) {
+    if (!link) return '<span class="no-link" aria-label="No ' + text.toLowerCase() + ' video available">—</span>';
     return (
       '<a class="link-btn" href="' + escapeHtml(link.url) +
       '" target="_blank" rel="noopener" aria-label="' + aria + (link.tag ? " (" + link.tag + ")" : "") + '"' +

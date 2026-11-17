@@ -26,7 +26,7 @@ js/data.js      games, stations and tracks
 js/app.js       sidebar, routing (#/fh5/epitaph-records) and track list
 ```
 
-Each track has a link to its **official video** and a **live performance**. Until a direct link is added, the button opens a YouTube search (marked *Search*). To add direct links, edit `js/data.js`:
+Each track has a link to its **official video** and a **live performance**. When no direct link has been found, the cell shows a dash instead of a button. To add or fix links, edit `js/data.js`:
 
 ```js
 { artist: "Royal Blood", title: "Out of the Black",
@@ -35,6 +35,8 @@ Each track has a link to its **official video** and a **live performance**. Unti
 ```
 
 Run locally by opening `index.html` in a browser.
+
+See [`REVIEW.md`](REVIEW.md) for links and data that still need a manual check.
 
 ## Disclaimer
 
