@@ -47,8 +47,8 @@ window.FORZA_DATA = {
             { artist: "TOY", title: "Motoring", official: "https://www.youtube.com/watch?v=VDYMjvdCWpc", officialType: "video", live: "https://www.youtube.com/watch?v=jQIev4gv6AI", liveType: "session" },
             { artist: "Wavves", title: "Bug", official: "https://www.youtube.com/watch?v=nXbCeUmiBLU", officialType: "audio", live: "https://www.youtube.com/watch?v=2Hw1FpcHnQo", liveType: "session" },
             { artist: "White Lies", title: "Farewell to the Fairground", official: "https://www.youtube.com/watch?v=LQ0AFriC7ZM", officialType: "video", live: "https://www.youtube.com/watch?v=8hXLArQV2GE", liveType: "tv" },
-            { artist: "You Me at Six", title: "Bite My Tongue (feat. Oli Sykes)" },
-            { artist: "Yuck", title: "Get Away" }
+            { artist: "You Me at Six", title: "Bite My Tongue (feat. Oli Sykes)", official: "https://www.youtube.com/watch?v=l1CTbE3u0PQ", officialType: "video", live: "https://www.youtube.com/watch?v=7ki0Cr5UC4E", liveType: "pro" },
+            { artist: "Yuck", title: "Get Away", official: "https://www.youtube.com/watch?v=NuCaieTMlck", officialType: "video", live: "https://www.youtube.com/watch?v=UJD2FyOAfbg", liveType: "session" }
           ]
         }
       ]
@@ -75,7 +75,7 @@ window.FORZA_DATA = {
             { artist: "Jane's Addiction", title: "Just Because", official: "https://www.youtube.com/watch?v=sb3FJdRk-tI", officialType: "video", live: "https://www.youtube.com/watch?v=rYehouaYHnY", liveType: "tv" },
             { artist: "Miles Kane", title: "Come Closer", official: "https://www.youtube.com/watch?v=V7g8zhk5KZM", officialType: "video", live: "https://www.youtube.com/watch?v=qjrerOfkqIk", liveType: "session" },
             { artist: "Papa", title: "Put Me to Work", official: "https://www.youtube.com/watch?v=nGZStnCQ79E", officialType: "video", live: "https://www.youtube.com/watch?v=664s8y-pe7k", liveType: "session" },
-            { artist: "Pixies", title: "Debaser", live: "https://www.youtube.com/watch?v=MEKC0bPSBiA", liveType: "pro" },
+            { artist: "Pixies", title: "Debaser", live: "https://www.youtube.com/watch?v=MEKC0bPSBiA", liveType: "pro", official: "https://www.youtube.com/watch?v=0o58wYW9Ah0", officialType: "audio" },
             { artist: "Royal Blood", title: "Out of the Black", official: "https://www.youtube.com/watch?v=bSdtvfBQd6c", officialType: "video", live: "https://www.youtube.com/watch?v=RCKdhk7mi_4", liveType: "tv" },
             { artist: "Skaters", title: "This Much I Care", official: "https://www.youtube.com/watch?v=eeS80u-xVJ8", officialType: "audio" },
             { artist: "Temples", title: "Mesmerise", official: "https://www.youtube.com/watch?v=zI7WLkXLfCU", officialType: "video", live: "https://www.youtube.com/watch?v=fYVTxLnjgxY", liveType: "session" },
@@ -85,7 +85,7 @@ window.FORZA_DATA = {
             { artist: "Thee Oh Sees", title: "I Come from the Mountain", official: "https://www.youtube.com/watch?v=mX8B87SJ8NQ", officialType: "audio", live: "https://www.youtube.com/watch?v=nqrhP89YvXU", liveType: "session" },
             { artist: "Tom Williams & The Boat", title: "All Day", official: "https://www.youtube.com/watch?v=nYBPQrtaLdY", officialType: "video", live: "https://www.youtube.com/watch?v=yFl2HVVMD3g", liveType: "pro" },
             { artist: "TOY", title: "It's Been So Long", official: "https://www.youtube.com/watch?v=MUoAt5n0_o0", officialType: "video", live: "https://www.youtube.com/watch?v=dYc8Sk_fOBs", liveType: "fan" },
-            { artist: "Wild Smiles", title: "Fool for You" }
+            { artist: "Wild Smiles", title: "Fool for You", official: "https://www.youtube.com/watch?v=9KjE_gy9yMI", officialType: "video", live: "https://www.youtube.com/watch?v=U0W1IHXSxxs", liveType: "session" }
           ]
         }
       ]
@@ -107,7 +107,7 @@ window.FORZA_DATA = {
             { artist: "A Day to Remember", title: "Naivety", official: "https://www.youtube.com/watch?v=aa9niVjcRI4", officialType: "video", live: "https://www.youtube.com/watch?v=WXQcvpuUgXQ", liveType: "fan" },
             { artist: "Avion Roe", title: "This Loneliness", official: "https://www.youtube.com/watch?v=bOk0rvcIUIQ", officialType: "audio" },
             { artist: "Bad Religion", title: "Anxiety", official: "https://www.youtube.com/watch?v=4FMXVveOKnI", officialType: "audio" },
-            { artist: "Beautiful Bodies", title: "She's a Blast", official: "https://www.youtube.com/watch?v=A48guW637mc", officialType: "audio" },
+            { artist: "Beautiful Bodies", title: "She's a Blast", official: "https://www.youtube.com/watch?v=A48guW637mc", officialType: "audio", live: "https://www.youtube.com/watch?v=g8NijTG5b7k", liveType: "fan" },
             { artist: "Bouncing Souls", title: "The Gold Song", official: "https://www.youtube.com/watch?v=ykq4_v_qcf8", officialType: "video", live: "https://www.youtube.com/watch?v=HAKoFDtX38U", liveType: "fan" },
             { artist: "Descendents", title: "Spineless and Scarlet Red", official: "https://www.youtube.com/watch?v=pmwG1eD4Nss", officialType: "audio" },
             { artist: "Every Time I Die", title: "It Remembers", official: "https://www.youtube.com/watch?v=FrogoSmiAqU", officialType: "video", live: "https://www.youtube.com/watch?v=DR4AhgzB8-M", liveType: "tv" },
@@ -141,7 +141,7 @@ window.FORZA_DATA = {
             { artist: "CRUISR", title: "All Over", official: "https://www.youtube.com/watch?v=ed1NybIVDNA", officialType: "video", live: "https://www.youtube.com/watch?v=pqzNTaTgRlg", liveType: "session" },
             { artist: "Frnkiero and the Cellabration", title: "Weighted", official: "https://www.youtube.com/watch?v=ahw1LR-dnG8", officialType: "video", live: "https://www.youtube.com/watch?v=ebhqpEUDPMw", liveType: "fan" },
             { artist: "Mayer Hawthorne", title: "Love Like That", official: "https://www.youtube.com/watch?v=SkHkVsmbJOo", officialType: "audio", live: "https://www.youtube.com/watch?v=nCJzXxupgj4", liveType: "session" },
-            { artist: "MIAMIGO", title: "Hard to Love", official: "https://www.youtube.com/watch?v=alwt89iLTl8", officialType: "audio" },
+            { artist: "MIAMIGO", title: "Hard to Love", official: "https://www.youtube.com/watch?v=alwt89iLTl8", officialType: "audio", live: "https://www.youtube.com/watch?v=W-TBybyfTTs", liveType: "pro" },
             { artist: "Saves the Day", title: "See You", official: "https://www.youtube.com/watch?v=JseklLoJJYA", officialType: "video", live: "https://www.youtube.com/watch?v=26amGNeGWaw", liveType: "fan" },
             { artist: "School of Seven Bells", title: "Ablaze", official: "https://www.youtube.com/watch?v=dPWJ0MreHeg", officialType: "video" },
             { artist: "The 1975", title: "The Sound", official: "https://www.youtube.com/watch?v=FSnAllHtG70", officialType: "video", live: "https://www.youtube.com/watch?v=oiDxn3QrSLM", liveType: "session" },
@@ -170,23 +170,23 @@ window.FORZA_DATA = {
             { artist: "At the Drive-In", title: "No Wolf Like the Present", official: "https://www.youtube.com/watch?v=mSnSryEO3Uo", officialType: "audio" },
             { artist: "Bass Drum of Death", title: "I Don't Wanna Know", official: "https://www.youtube.com/watch?v=k4C451MaYlE", officialType: "audio" },
             { artist: "Bat Fangs", title: "Turn It Up", official: "https://www.youtube.com/watch?v=-6mI_CSNvjg", officialType: "video", live: "https://www.youtube.com/watch?v=tAjAL2bpuhY", liveType: "session" },
-            { artist: "Black Rebel Motorcycle Club", title: "Little Thing Gone Wild", official: "https://www.youtube.com/watch?v=eCh_JGmaA_8", officialType: "audio" },
-            { artist: "Dommengang", title: "Pastel City" },
+            { artist: "Black Rebel Motorcycle Club", title: "Little Thing Gone Wild", official: "https://www.youtube.com/watch?v=eCh_JGmaA_8", officialType: "audio", live: "https://www.youtube.com/watch?v=bNIgABRBMts", liveType: "fan" },
+            { artist: "Dommengang", title: "Pastel City", official: "https://www.youtube.com/watch?v=38VNGGmPkq0", officialType: "audio" },
             { artist: "Dorothy", title: "Down to the Bottom", official: "https://www.youtube.com/watch?v=obR-9gfmkQY", officialType: "video", live: "https://www.youtube.com/watch?v=0NE-ZD5fM7g", liveType: "pro" },
             { artist: "Eyes Set to Kill", title: "Die Trying", official: "https://www.youtube.com/watch?v=fjkXdKow0_s", officialType: "audio", live: "https://www.youtube.com/watch?v=uGkeCAI5PoE", liveType: "fan" },
             { artist: "Foo Fighters", title: "La Dee Da", official: "https://www.youtube.com/watch?v=COSQ8A8iSbw", officialType: "audio", live: "https://www.youtube.com/watch?v=4_tbs3SngJA", liveType: "fan" },
             { artist: "Greta Van Fleet", title: "Safari Song", official: "https://www.youtube.com/watch?v=1lfBC6S9qVM", officialType: "audio", live: "https://www.youtube.com/watch?v=zXdM1rqSlSQ", liveType: "session" },
             { artist: "Hot Snakes", title: "Six Wave Hold-Down", official: "https://www.youtube.com/watch?v=yrR50b7-OSQ", officialType: "audio", live: "https://www.youtube.com/watch?v=HRxZT8o1cNo", liveType: "session" },
-            { artist: "I Prevail", title: "Rise" },
-            { artist: "Jack White", title: "Over and Over and Over" },
-            { artist: "Pennywise", title: "Can't Be Ignored" },
-            { artist: "Queens of the Stone Age", title: "The Evil Has Landed" },
-            { artist: "Red Sun Rising", title: "Deathwish" },
-            { artist: "Starset", title: "Satellite" },
-            { artist: "The Killers", title: "Run for Cover" },
-            { artist: "The Wonder Years", title: "Sister Cities" },
-            { artist: "Underoath", title: "Rapture" },
-            { artist: "WALK THE MOON", title: "Headphones" }
+            { artist: "I Prevail", title: "Rise", official: "https://www.youtube.com/watch?v=sTMiqk1fBmM", officialType: "audio", live: "https://www.youtube.com/watch?v=-deOL2LVAhU", liveType: "fan" },
+            { artist: "Jack White", title: "Over and Over and Over", official: "https://www.youtube.com/watch?v=ShCRN3tFy80", officialType: "video", live: "https://www.youtube.com/watch?v=oQI_x-eQgEw", liveType: "tv" },
+            { artist: "Pennywise", title: "Can't Be Ignored", official: "https://www.youtube.com/watch?v=kJFD2R_T6Ac", officialType: "audio" },
+            { artist: "Queens of the Stone Age", title: "The Evil Has Landed", official: "https://www.youtube.com/watch?v=Exa0CzlCb3Y", officialType: "audio", live: "https://www.youtube.com/watch?v=0aoIHDa0Aaw", liveType: "session" },
+            { artist: "Red Sun Rising", title: "Deathwish", official: "https://www.youtube.com/watch?v=0crY95eobHU", officialType: "video", live: "https://www.youtube.com/watch?v=gexah5I88xc", liveType: "session" },
+            { artist: "Starset", title: "Satellite", official: "https://www.youtube.com/watch?v=fB4tJ_Ml9nw", officialType: "video", live: "https://www.youtube.com/watch?v=FonmUjYSyho", liveType: "tv" },
+            { artist: "The Killers", title: "Run for Cover", official: "https://www.youtube.com/watch?v=uC1vjuK4ODM", officialType: "audio", live: "https://www.youtube.com/watch?v=bZngRE4XBU0", liveType: "fan" },
+            { artist: "The Wonder Years", title: "Sister Cities", official: "https://www.youtube.com/watch?v=ccIyBeLEjGM", officialType: "video", live: "https://www.youtube.com/watch?v=Y5xzU3N93V0", liveType: "session" },
+            { artist: "Underoath", title: "Rapture", official: "https://www.youtube.com/watch?v=wdqVP5Sqjo4", officialType: "audio", live: "https://www.youtube.com/watch?v=XZHngKKemH0", liveType: "session" },
+            { artist: "WALK THE MOON", title: "Headphones", official: "https://www.youtube.com/watch?v=1y7giHbrvcc", officialType: "video", live: "https://www.youtube.com/watch?v=-tyATcaGIIc", liveType: "tv" }
           ]
         }
       ]
@@ -205,28 +205,28 @@ window.FORZA_DATA = {
           tagline: "A custom mix of rock 'n' roll's greatest hits and regional favorites.",
           genres: ["Rock", "Alternative", "Punk"],
           tracks: [
-            { artist: "Angélica Garcia", title: "Karma the Knife" },
+            { artist: "Angélica Garcia", title: "Karma the Knife", official: "https://www.youtube.com/watch?v=MONmVK5lc78", officialType: "audio" },
             { artist: "Arkells", title: "You Can Get It (feat. K.Flay)", official: "https://www.youtube.com/watch?v=2ENinfP4R3Y", officialType: "video", live: "https://www.youtube.com/watch?v=cRqDiiWUclw", liveType: "pro" },
             { artist: "Bite the Buffalo", title: "Getaway", official: "https://www.youtube.com/watch?v=YbrzCx4BaOg", officialType: "video" },
-            { artist: "Blah Blah Blahs", title: "Do It Better" },
-            { artist: "Bring Me the Horizon", title: "Teardrops", official: "https://www.youtube.com/watch?v=L5uV3gmOH9g", officialType: "video" },
-            { artist: "Death Valley Girls", title: "10 Day Miracle Challenge", live: "https://www.youtube.com/watch?v=7y-UgA3oAAE", liveType: "fan" },
+            { artist: "Blah Blah Blahs", title: "Do It Better", official: "https://www.youtube.com/watch?v=5GN50oH49kY", officialType: "audio" },
+            { artist: "Bring Me the Horizon", title: "Teardrops", official: "https://www.youtube.com/watch?v=L5uV3gmOH9g", officialType: "video", live: "https://www.youtube.com/watch?v=gytIkPYXVA4", liveType: "pro" },
+            { artist: "Death Valley Girls", title: "10 Day Miracle Challenge", live: "https://www.youtube.com/watch?v=7y-UgA3oAAE", liveType: "fan", official: "https://www.youtube.com/watch?v=Xi_qFUs8m3I", officialType: "audio" },
             { artist: "DIIV", title: "Under the Sun", official: "https://www.youtube.com/watch?v=zKbqyuaXolg", officialType: "audio", live: "https://www.youtube.com/watch?v=7EOVMYn9uhA", liveType: "session" },
-            { artist: "El Shirota", title: "La Ciudad", live: "https://www.youtube.com/watch?v=eSPj-izD8ng", liveType: "session" },
-            { artist: "Foo Fighters", title: "Holding Poison" },
+            { artist: "El Shirota", title: "La Ciudad", live: "https://www.youtube.com/watch?v=eSPj-izD8ng", liveType: "session", official: "https://www.youtube.com/watch?v=VY18iOG2HqE", officialType: "video" },
+            { artist: "Foo Fighters", title: "Holding Poison", official: "https://www.youtube.com/watch?v=1x9_1QC5fTY", officialType: "visualizer" },
             { artist: "Foo Fighters", title: "No Son of Mine", official: "https://www.youtube.com/watch?v=xAVfdoovrIU", officialType: "video", live: "https://www.youtube.com/watch?v=gbUStYJdMC4", liveType: "fan" },
-            { artist: "Maxband", title: "Unsaid" },
+            { artist: "Maxband", title: "Unsaid", official: "https://www.youtube.com/watch?v=_0AkbTgi1iA", officialType: "audio" },
             { artist: "Melted Brains", title: "I Wanna Connect" },
             { artist: "Nothing but Thieves", title: "Unperson", official: "https://www.youtube.com/watch?v=dO-V7AGFASo", officialType: "video", live: "https://www.youtube.com/watch?v=3ECl21qw54g", liveType: "pro" },
             { artist: "Oscar Lang", title: "Antidote to Being Bored", official: "https://www.youtube.com/watch?v=463HBIYpzqU", officialType: "video" },
             { artist: "Plague Vendor", title: "Live More" },
             { artist: "Plague Vendor", title: "New Comedown", official: "https://www.youtube.com/watch?v=Rti4NxhEj9w", officialType: "video", live: "https://www.youtube.com/watch?v=9238ElosddA", liveType: "fan" },
             { artist: "Royal Blood", title: "Trouble's Coming", official: "https://www.youtube.com/watch?v=uURsMKMloM8", officialType: "video", live: "https://www.youtube.com/watch?v=XLmx2xLuKCc", liveType: "tv" },
-            { artist: "SOFI TUKKER", title: "Freak" },
-            { artist: "Technicolor Fabrics", title: "Mejor Que Nadie" },
-            { artist: "The Killers", title: "Caution" },
-            { artist: "The Struts & Tom Morello", title: "Wild Child" },
-            { artist: "Wolf Alice", title: "Smile" }
+            { artist: "SOFI TUKKER", title: "Freak", official: "https://www.youtube.com/watch?v=6xweH20MQiE", officialType: "audio" },
+            { artist: "Technicolor Fabrics", title: "Mejor Que Nadie", official: "https://www.youtube.com/watch?v=J1o4hvNE6uA", officialType: "video" },
+            { artist: "The Killers", title: "Caution", official: "https://www.youtube.com/watch?v=WrpBgN_iUnA", officialType: "video", live: "https://www.youtube.com/watch?v=ZT4h9M49s40", liveType: "tv" },
+            { artist: "The Struts & Tom Morello", title: "Wild Child", official: "https://www.youtube.com/watch?v=8KsBf-iXc0Y", officialType: "audio", live: "https://www.youtube.com/watch?v=2COZJYApJXE", liveType: "fan" },
+            { artist: "Wolf Alice", title: "Smile", official: "https://www.youtube.com/watch?v=NV39h7GHDYs", officialType: "video", live: "https://www.youtube.com/watch?v=1gEBVbHJpZo", liveType: "pro" }
           ]
         },
         {
@@ -243,14 +243,14 @@ window.FORZA_DATA = {
             { artist: "Early Eyes", title: "Revel Berry", live: "https://www.youtube.com/watch?v=-8Woi3koU8U", liveType: "pro" },
             { artist: "The Ghost Inside", title: "Aftermath", official: "https://www.youtube.com/watch?v=obabWJUdncc", officialType: "video", live: "https://www.youtube.com/watch?v=ehaGJXJk98U", liveType: "fan" },
             { artist: "Joyce Manor", title: "Gotta Let It Go", official: "https://www.youtube.com/watch?v=5D7s5glNk8k", officialType: "video", live: "https://www.youtube.com/watch?v=pzelFo-OfQE", liveType: "fan" },
-            { artist: "The Linda Lindas", title: "Growing Up", official: "https://www.youtube.com/watch?v=Wm1Sew7lAG4", officialType: "video" },
-            { artist: "The Linda Lindas", title: "Oh!", official: "https://www.youtube.com/watch?v=wF-1IIs9_5U", officialType: "video" },
-            { artist: "Magnolia Park", title: "Feel Something (feat. Derek Sanders)" },
-            { artist: "Mannequin Pussy", title: "Control" },
-            { artist: "The Offspring", title: "It'll Be a Long Time" },
-            { artist: "Pennywise", title: "Land of the Free?" },
-            { artist: "PTS!", title: "Bittersweet Teeth" },
-            { artist: "Thick", title: "Happiness" }
+            { artist: "The Linda Lindas", title: "Growing Up", official: "https://www.youtube.com/watch?v=Wm1Sew7lAG4", officialType: "video", live: "https://www.youtube.com/watch?v=DYRlXq2S4TI", liveType: "session" },
+            { artist: "The Linda Lindas", title: "Oh!", official: "https://www.youtube.com/watch?v=wF-1IIs9_5U", officialType: "video", live: "https://www.youtube.com/watch?v=b1V98NxwxVM", liveType: "session" },
+            { artist: "Magnolia Park", title: "Feel Something (feat. Derek Sanders)", official: "https://www.youtube.com/watch?v=Om458AUy_OQ", officialType: "video", live: "https://www.youtube.com/watch?v=dk-vFixwXLg", liveType: "session" },
+            { artist: "Mannequin Pussy", title: "Control", official: "https://www.youtube.com/watch?v=9C_tFlCkWVM", officialType: "video", live: "https://www.youtube.com/watch?v=CHfkAWHcqQ4", liveType: "fan" },
+            { artist: "The Offspring", title: "It'll Be a Long Time", official: "https://www.youtube.com/watch?v=LpEYuVpJUVI", officialType: "audio", live: "https://www.youtube.com/watch?v=S9uJl1JcYr4", liveType: "pro" },
+            { artist: "Pennywise", title: "Land of the Free?", official: "https://www.youtube.com/watch?v=OHu42frzmys", officialType: "audio" },
+            { artist: "PTS!", title: "Bittersweet Teeth", official: "https://www.youtube.com/watch?v=cdRDC13KeQo", officialType: "video" },
+            { artist: "Thick", title: "Happiness", official: "https://www.youtube.com/watch?v=KAXJDUcKgKI", officialType: "video", live: "https://www.youtube.com/watch?v=tCuQ2_nXXVM", liveType: "session" }
           ]
         }
       ]
