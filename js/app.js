@@ -126,10 +126,11 @@
 
   function button(link, icon, text, aria) {
     return (
-      '<a class="link-btn' + (link.direct ? " is-direct" : "") + '" href="' + escapeHtml(link.url) +
+      '<a class="link-btn" href="' + escapeHtml(link.url) +
       '" target="_blank" rel="noopener" aria-label="' + aria + (link.tag ? " (" + link.tag + ")" : "") + '"' +
       (link.tag ? ' title="' + link.tag + '"' : "") + ">" +
-      icon + "<span>" + text + "</span>" + (link.tag ? '<span class="search-tag">' + link.tag + "</span>" : "") + "</a>"
+      icon + "<span>" + text + "</span></a>" +
+      (link.tag ? '<span class="type-tag" aria-hidden="true">' + link.tag + "</span>" : "")
     );
   }
 
