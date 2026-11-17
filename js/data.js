@@ -275,7 +275,7 @@ window.FORZA_DATA = {
             { artist: "Biffy Clyro", title: "Friendshipping", official: "https://www.youtube.com/watch?v=qt6dqfkIpGI", officialType: "audio", live: "https://www.youtube.com/watch?v=S-xfMi-v82g", liveType: "fan" },
             { artist: "Coheed and Cambria", title: "Searching for Tomorrow", official: "https://www.youtube.com/watch?v=hDsYGLbmadg", officialType: "video", live: "https://www.youtube.com/watch?v=AGiezlQgTg8", liveType: "fan" },
             { artist: "Linkin Park", title: "Up From the Bottom", official: "https://www.youtube.com/watch?v=97Mj6pXYMd8", officialType: "video", live: "https://www.youtube.com/watch?v=Q5nFwHcboTs", liveType: "pro" },
-            { artist: "PassCode", title: "Ray", live: "https://www.youtube.com/watch?v=ypzM183YnEg", liveType: "session" },
+            { artist: "PassCode", title: "Ray", official: "https://www.youtube.com/watch?v=bI0_Hx__dFU", officialType: "video", live:"https://www.youtube.com/watch?v=ypzM183YnEg", liveType: "session" },
             { artist: "Poppy", title: "new way out", official: "https://www.youtube.com/watch?v=OqVNYcaS-3E", officialType: "visualizer", live: "https://www.youtube.com/watch?v=VnIwvi0YUrM", liveType: "pro" },
             { artist: "Snõõper", title: "Worldwide", official: "https://www.youtube.com/watch?v=MN4FTCL8PMQ", officialType: "video", live: "https://www.youtube.com/watch?v=BQ0KLm_LdmI", liveType: "session" },
             { artist: "Spiritbox", title: "Keep Sweet", official: "https://www.youtube.com/watch?v=usgxyuMo0MA", officialType: "visualizer", live: "https://www.youtube.com/watch?v=808tkeJb3rg", liveType: "session" },
