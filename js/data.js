@@ -6,6 +6,10 @@
  *   live:     "https://www.youtube.com/watch?v=..."   (live performance)
  * When a link is missing, the page falls back to a YouTube search for it.
  *
+ * Optional labels shown on the buttons:
+ *   officialType: "video" | "audio" | "lyric" | "visualizer"
+ *   liveType:     "pro" | "tv" | "session" | "fan"
+ *
  * Game colors are inspired by each game's setting/branding and can be tweaked freely.
  */
 window.FORZA_DATA = {
@@ -264,31 +268,31 @@ window.FORZA_DATA = {
           tagline: "Rock, metal and punk for the moshers — with a strong J-rock lineup.",
           genres: ["Metal", "Rock", "J-rock"],
           tracks: [
-            { artist: "A Day to Remember", title: "Bad Blood" },
-            { artist: "BABYMETAL", title: "White Flame (白炎)" },
-            { artist: "Sleep Theory", title: "III" },
-            { artist: "Rise Against", title: "I Want It All" },
-            { artist: "Biffy Clyro", title: "Friendshipping" },
-            { artist: "Coheed and Cambria", title: "Searching for Tomorrow" },
-            { artist: "Linkin Park", title: "Up From the Bottom" },
-            { artist: "PassCode", title: "Ray" },
-            { artist: "Poppy", title: "new way out" },
-            { artist: "Snõõper", title: "Worldwide" },
-            { artist: "Spiritbox", title: "Keep Sweet" },
-            { artist: "Turnstile", title: "SOLE" },
-            { artist: "BABYMETAL", title: "Gimme Chocolate!!" },
-            { artist: "Spiritual Cramp", title: "Go Back Home" },
-            { artist: "Ecca Vandal", title: "VERTICAL WORLDS" },
-            { artist: "BAND-MAID", title: "What is justice?" },
-            { artist: "Coach Party", title: "Disco Dream" },
-            { artist: "GOKUMON (UchikubiGokumonDoukoukai)", title: "hatarakitakunai" },
-            { artist: "Pendulum & AWOLNATION", title: "Guiding Lights" },
-            { artist: "South Arcade", title: "Drive Myself Home" },
-            { artist: "Teen Mortgage", title: "Disappear" },
-            { artist: "Bearings", title: "Comfort Company" },
-            { artist: "Death Lens", title: "Power" },
-            { artist: "ONE OK ROCK", title: "Dystopia (Japanese Version)" },
-            { artist: "Witch Post", title: "The Wolf" }
+            { artist: "A Day to Remember", title: "Bad Blood", official: "https://www.youtube.com/watch?v=goARHpTbRas", officialType: "audio", live: "https://www.youtube.com/watch?v=l8rMaZZbSZ0", liveType: "fan" },
+            { artist: "BABYMETAL", title: "White Flame (白炎)", official: "https://www.youtube.com/watch?v=CPu5Et4bpSc", officialType: "audio" },
+            { artist: "Sleep Theory", title: "III", official: "https://www.youtube.com/watch?v=71slUkcCMpY", officialType: "video" },
+            { artist: "Rise Against", title: "I Want It All", official: "https://www.youtube.com/watch?v=9msDasgJ-XY", officialType: "video", live: "https://www.youtube.com/watch?v=KyR2hhYkxs4", liveType: "tv" },
+            { artist: "Biffy Clyro", title: "Friendshipping", official: "https://www.youtube.com/watch?v=qt6dqfkIpGI", officialType: "audio", live: "https://www.youtube.com/watch?v=S-xfMi-v82g", liveType: "fan" },
+            { artist: "Coheed and Cambria", title: "Searching for Tomorrow", official: "https://www.youtube.com/watch?v=hDsYGLbmadg", officialType: "video", live: "https://www.youtube.com/watch?v=AGiezlQgTg8", liveType: "fan" },
+            { artist: "Linkin Park", title: "Up From the Bottom", official: "https://www.youtube.com/watch?v=97Mj6pXYMd8", officialType: "video", live: "https://www.youtube.com/watch?v=Q5nFwHcboTs", liveType: "pro" },
+            { artist: "PassCode", title: "Ray", live: "https://www.youtube.com/watch?v=ypzM183YnEg", liveType: "session" },
+            { artist: "Poppy", title: "new way out", official: "https://www.youtube.com/watch?v=OqVNYcaS-3E", officialType: "visualizer", live: "https://www.youtube.com/watch?v=VnIwvi0YUrM", liveType: "pro" },
+            { artist: "Snõõper", title: "Worldwide", official: "https://www.youtube.com/watch?v=MN4FTCL8PMQ", officialType: "video", live: "https://www.youtube.com/watch?v=BQ0KLm_LdmI", liveType: "session" },
+            { artist: "Spiritbox", title: "Keep Sweet", official: "https://www.youtube.com/watch?v=usgxyuMo0MA", officialType: "visualizer", live: "https://www.youtube.com/watch?v=808tkeJb3rg", liveType: "session" },
+            { artist: "Turnstile", title: "SOLE", official: "https://www.youtube.com/watch?v=2iry0ssksZg", officialType: "audio", live: "https://www.youtube.com/watch?v=s5OneesvqG0", liveType: "fan" },
+            { artist: "BABYMETAL", title: "Gimme Chocolate!!", official: "https://www.youtube.com/watch?v=WIKqgE4BwAY", officialType: "video", live: "https://www.youtube.com/watch?v=sEU-fjuycw8", liveType: "pro" },
+            { artist: "Spiritual Cramp", title: "Go Back Home", official: "https://www.youtube.com/watch?v=EdgonEpdb2o", officialType: "audio" },
+            { artist: "Ecca Vandal", title: "VERTICAL WORLDS", official: "https://www.youtube.com/watch?v=WTMV9ywRYko", officialType: "video", live: "https://www.youtube.com/watch?v=OaBJ9JopXrk", liveType: "fan" },
+            { artist: "BAND-MAID", title: "What is justice?", official: "https://www.youtube.com/watch?v=3kMIh0_Wkpk", officialType: "video", live: "https://www.youtube.com/watch?v=rG8cfEJeNMw", liveType: "pro" },
+            { artist: "Coach Party", title: "Disco Dream", official: "https://www.youtube.com/watch?v=fhZqjvdchjY", officialType: "video", live: "https://www.youtube.com/watch?v=pfF96pFoFSo", liveType: "pro" },
+            { artist: "GOKUMON (UchikubiGokumonDoukoukai)", title: "hatarakitakunai", official: "https://www.youtube.com/watch?v=GR-mLGV0X1I", officialType: "video", live: "https://www.youtube.com/watch?v=eBqOqq0dF9U", liveType: "pro" },
+            { artist: "Pendulum & AWOLNATION", title: "Guiding Lights", official: "https://www.youtube.com/watch?v=Mgh7JJFO5sc", officialType: "lyric", live: "https://www.youtube.com/watch?v=GA2dxCtAgCk", liveType: "pro" },
+            { artist: "South Arcade", title: "Drive Myself Home", official: "https://www.youtube.com/watch?v=wcR_Wp94E40", officialType: "video", live: "https://www.youtube.com/watch?v=gwPChgm_FpE", liveType: "fan" },
+            { artist: "Teen Mortgage", title: "Disappear", official: "https://www.youtube.com/watch?v=yy72oWl5KJU", officialType: "lyric" },
+            { artist: "Bearings", title: "Comfort Company", official: "https://www.youtube.com/watch?v=90MV8Sen6ds", officialType: "video" },
+            { artist: "Death Lens", title: "Power", official: "https://www.youtube.com/watch?v=APC4zAsYvcs", officialType: "video" },
+            { artist: "ONE OK ROCK", title: "Dystopia (Japanese Version)", official: "https://www.youtube.com/watch?v=cIOntvhfJx4", officialType: "video", live: "https://www.youtube.com/watch?v=TLfW6gzf5og", liveType: "pro" },
+            { artist: "Witch Post", title: "The Wolf", official: "https://www.youtube.com/watch?v=1ocDSbjWdBY", officialType: "video", live: "https://www.youtube.com/watch?v=_cwe3BvlJpY", liveType: "pro" }
           ]
         }
       ]

@@ -39,11 +39,19 @@
     return "https://www.youtube.com/results?search_query=" + encodeURIComponent(query);
   }
 
+  const TYPE_LABELS = {
+    audio: "Audio", lyric: "Lyric", visualizer: "Visualizer", video: "",
+    pro: "", tv: "TV", session: "Session", fan: "Fan cam"
+  };
+
   function linkFor(track, kind) {
     const direct = track[kind];
-    if (direct) return { url: direct, direct: true };
+    if (direct) {
+      const type = track[kind + "Type"];
+      return { url: direct, direct: true, tag: (type && TYPE_LABELS[type]) || "" };
+    }
     const suffix = kind === "official" ? "official video" : "live";
-    return { url: ytSearch(track.artist + " " + track.title + " " + suffix), direct: false };
+    return { url: ytSearch(track.artist + " " + track.title + " " + suffix), direct: false, tag: "Search" };
   }
 
   function renderNav(activeKey) {
@@ -117,8 +125,9 @@
   function button(link, icon, text, aria) {
     return (
       '<a class="link-btn' + (link.direct ? " is-direct" : "") + '" href="' + escapeHtml(link.url) +
-      '" target="_blank" rel="noopener" aria-label="' + aria + (link.direct ? "" : " (YouTube search)") + '">' +
-      icon + "<span>" + text + "</span>" + (link.direct ? "" : '<span class="search-tag">Search</span>') + "</a>"
+      '" target="_blank" rel="noopener" aria-label="' + aria + (link.tag ? " (" + link.tag + ")" : "") + '"' +
+      (link.tag ? ' title="' + link.tag + '"' : "") + ">" +
+      icon + "<span>" + text + "</span>" + (link.tag ? '<span class="search-tag">' + link.tag + "</span>" : "") + "</a>"
     );
   }
 
