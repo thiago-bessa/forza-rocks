@@ -269,7 +269,7 @@ window.FORZA_DATA = {
           genres: ["Metal", "Rock", "J-rock"],
           tracks: [
             { artist: "A Day to Remember", title: "Bad Blood", official: "https://www.youtube.com/watch?v=goARHpTbRas", officialType: "audio", live: "https://www.youtube.com/watch?v=l8rMaZZbSZ0", liveType: "fan" },
-            { artist: "BABYMETAL", title: "White Flame (白炎)", official: "https://www.youtube.com/watch?v=9wvYi5dXU3Y" },
+            { artist: "BABYMETAL", title: "White Flame (白炎)", official: "https://www.youtube.com/watch?v=9wvYi5dXU3Y", officialType: "audio" },
             { artist: "Sleep Theory", title: "III", official: "https://www.youtube.com/watch?v=71slUkcCMpY", officialType: "video" },
             { artist: "Rise Against", title: "I Want It All", official: "https://www.youtube.com/watch?v=9msDasgJ-XY", officialType: "video", live: "https://www.youtube.com/watch?v=KyR2hhYkxs4", liveType: "tv" },
             { artist: "Biffy Clyro", title: "Friendshipping", official: "https://www.youtube.com/watch?v=qt6dqfkIpGI", officialType: "audio", live: "https://www.youtube.com/watch?v=S-xfMi-v82g", liveType: "fan" },

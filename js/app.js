@@ -133,7 +133,8 @@
   }
 
   // ---------- Video modal ----------
-  // Plays videos with YouTube's official embedded player (privacy-enhanced mode).
+  // Plays videos with YouTube's official embedded player. Uses youtube.com (not
+  // youtube-nocookie.com) so signed-in YouTube Premium viewers get no ads.
   // Ctrl/Cmd/Shift/middle-click still open the link in a new tab.
   let renderedTracks = [];
   const player = {
@@ -168,7 +169,7 @@
     player.youtube.href = url;
 
     const iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0&playsinline=1";
+    iframe.src = "https://www.youtube.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0&playsinline=1";
     iframe.title = track.artist + " – " + track.title + " (YouTube video player)";
     iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
