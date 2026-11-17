@@ -99,12 +99,13 @@
         return !query || (t.artist + " " + t.title).toLowerCase().indexOf(query) !== -1;
       });
 
+    renderedTracks = tracks;
     els.list.innerHTML = tracks.map(function (t) {
       const official = linkFor(t, "official");
       const live = linkFor(t, "live");
       const label = escapeHtml(t.artist + " – " + t.title);
       return (
-        '<div class="track-row" role="row">' +
+        '<div class="track-row" role="row" data-track="' + t.n + '">' +
         '<span role="cell" class="col-num">' + t.n + "</span>" +
         '<span role="cell" class="col-artist">' + escapeHtml(t.artist) + "</span>" +
         '<span role="cell" class="col-title">' + escapeHtml(t.title) + "</span>" +
@@ -123,12 +124,88 @@
     if (!link) return '<span class="no-link" aria-label="No ' + text.toLowerCase() + ' video available">—</span>';
     return (
       '<a class="link-btn" href="' + escapeHtml(link.url) +
-      '" target="_blank" rel="noopener" aria-label="' + aria + (link.tag ? " (" + link.tag + ")" : "") + '"' +
+      '" target="_blank" rel="noopener" data-player="' + text.toLowerCase() + '"' +
+      ' aria-haspopup="dialog" aria-label="' + aria + (link.tag ? " (" + link.tag + ")" : "") + '"' +
       (link.tag ? ' title="' + link.tag + '"' : "") + ">" +
       icon + "<span>" + text + "</span></a>" +
       (link.tag ? '<span class="type-tag" aria-hidden="true">' + link.tag + "</span>" : "")
     );
   }
+
+  // ---------- Video modal ----------
+  // Plays videos with YouTube's official embedded player (privacy-enhanced mode).
+  // Ctrl/Cmd/Shift/middle-click still open the link in a new tab.
+  let renderedTracks = [];
+  const player = {
+    dialog: document.getElementById("player"),
+    frame: document.getElementById("playerFrame"),
+    overline: document.getElementById("playerOverline"),
+    title: document.getElementById("playerTitle"),
+    youtube: document.getElementById("playerYoutube"),
+    closeBtn: document.getElementById("playerClose")
+  };
+
+  function videoId(url) {
+    try {
+      const u = new URL(url);
+      if (u.hostname === "youtu.be") return u.pathname.slice(1);
+      return u.searchParams.get("v");
+    } catch (e) { return null; }
+  }
+
+  function openPlayer(track, kind) {
+    const url = track[kind];
+    const id = videoId(url);
+    if (!id || !player.dialog || typeof player.dialog.showModal !== "function") {
+      window.open(url, "_blank", "noopener");
+      return;
+    }
+    const type = TYPE_LABELS[track[kind + "Type"]] || "";
+    player.overline.textContent =
+      (kind === "official" ? "Official video" : "Live") + (type ? " · " + type : "") +
+      " · " + active.station.name + " · " + active.game.title;
+    player.title.textContent = track.artist + " – " + track.title;
+    player.youtube.href = url;
+
+    const iframe = document.createElement("iframe");
+    iframe.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id) + "?autoplay=1&rel=0&playsinline=1";
+    iframe.title = track.artist + " – " + track.title + " (YouTube video player)";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
+    iframe.allowFullscreen = true;
+    player.frame.replaceChildren(iframe);
+
+    player.dialog.showModal();
+    document.body.classList.add("player-open");
+  }
+
+  function closePlayer() {
+    if (player.dialog && player.dialog.open) player.dialog.close();
+  }
+
+  if (player.dialog) {
+    // Stop playback whenever the dialog closes (Esc, close button or backdrop)
+    player.dialog.addEventListener("close", function () {
+      player.frame.replaceChildren();
+      document.body.classList.remove("player-open");
+    });
+    player.closeBtn.addEventListener("click", closePlayer);
+    player.dialog.addEventListener("click", function (e) {
+      if (e.target === player.dialog) closePlayer(); // click on the backdrop
+    });
+  }
+
+  els.list.addEventListener("click", function (e) {
+    const btn = e.target.closest("a[data-player]");
+    if (!btn) return;
+    if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || e.button !== 0) return;
+    const row = btn.closest("[data-track]");
+    const n = row && Number(row.getAttribute("data-track"));
+    const track = renderedTracks.find(function (t) { return t.n === n; });
+    if (!track) return;
+    e.preventDefault();
+    openPlayer(track, btn.getAttribute("data-player"));
+  });
 
   // Sorting: by band (then song) by default, or by song (then band)
   const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
@@ -201,7 +278,7 @@
   });
   els.scrim.addEventListener("click", closeDrawer);
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") closeDrawer();
+    if (e.key === "Escape" && !(player.dialog && player.dialog.open)) closeDrawer();
   });
   els.filter.addEventListener("input", function () { renderTracks(active); });
   window.addEventListener("hashchange", route);

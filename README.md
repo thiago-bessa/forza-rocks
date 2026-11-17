@@ -26,7 +26,7 @@ js/data.js      games, stations and tracks
 js/app.js       sidebar, routing (#/fh5/epitaph-records) and track list
 ```
 
-Each track has a link to its **official video** and a **live performance**. When no direct link has been found, the cell shows a dash instead of a button. To add or fix links, edit `js/data.js`:
+Each track has a link to its **official video** and a **live performance**. Clicking a button plays the video in a modal using YouTube's official embedded player (privacy-enhanced mode); the modal also links to the video on YouTube, since some owners disable playback on other sites. When no direct link has been found, the cell shows a dash instead of a button. To add or fix links, edit `js/data.js`:
 
 ```js
 { artist: "Royal Blood", title: "Out of the Black",

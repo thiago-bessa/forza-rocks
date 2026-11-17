@@ -67,10 +67,32 @@
       </section>
 
       <p class="footnote">
-        Tags next to a button say what kind of video it is, such as <span class="chip-inline">Audio</span> or <span class="chip-inline">Fan cam</span>. A dash means no direct video has been found yet.
+        Buttons play the video right here (Ctrl/Cmd-click opens it on YouTube). Tags next to a button say what kind of video it is, such as <span class="chip-inline">Audio</span> or <span class="chip-inline">Fan cam</span>. A dash means no direct video has been found yet.
       </p>
     </main>
   </div>
+
+  <dialog class="player" id="player" aria-labelledby="playerTitle">
+    <div class="player-card">
+      <header class="player-head">
+        <div class="player-heading">
+          <p class="player-overline" id="playerOverline"></p>
+          <h2 class="player-title" id="playerTitle"></h2>
+        </div>
+        <button type="button" class="icon-btn player-close" id="playerClose" aria-label="Close video">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.4 17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/></svg>
+        </button>
+      </header>
+      <div class="player-frame" id="playerFrame"></div>
+      <footer class="player-foot">
+        <p>Not playing? Some owners only allow playback on YouTube.</p>
+        <a class="player-youtube" id="playerYoutube" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v2h3.6l-9.8 9.8 1.4 1.4L19 6.4V10h2V3h-7zm5 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/></svg>
+          Watch on YouTube
+        </a>
+      </footer>
+    </div>
+  </dialog>
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
