@@ -97,6 +97,8 @@
   function renderTracks(entry) {
     const query = els.filter.value.trim().toLowerCase();
     const tracks = entry.station.tracks
+      .slice()
+      .sort(SORTERS[sortBy])
       .map(function (t, i) { return Object.assign({ n: i + 1 }, t); })
       .filter(function (t) {
         return !query || (t.artist + " " + t.title).toLowerCase().indexOf(query) !== -1;
@@ -130,6 +132,37 @@
       icon + "<span>" + text + "</span>" + (link.tag ? '<span class="search-tag">' + link.tag + "</span>" : "") + "</a>"
     );
   }
+
+  // Sorting: by band (then song) by default, or by song (then band)
+  const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+  const SORTERS = {
+    artist: function (a, b) { return collator.compare(a.artist, b.artist) || collator.compare(a.title, b.title); },
+    title: function (a, b) { return collator.compare(a.title, b.title) || collator.compare(a.artist, b.artist); }
+  };
+  let sortBy = "artist";
+  try {
+    const saved = localStorage.getItem("forza-rocks-sort");
+    if (SORTERS[saved]) sortBy = saved;
+  } catch (e) { /* storage unavailable */ }
+
+  function setSort(key) {
+    if (!SORTERS[key]) return;
+    sortBy = key;
+    try { localStorage.setItem("forza-rocks-sort", key); } catch (e) { /* ignore */ }
+    document.querySelectorAll("[data-sort]").forEach(function (el) {
+      const on = el.getAttribute("data-sort") === key;
+      el.classList.toggle("is-active", on);
+      el.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    document.querySelectorAll("[data-sort-col]").forEach(function (el) {
+      el.setAttribute("aria-sort", el.getAttribute("data-sort-col") === key ? "ascending" : "none");
+    });
+    if (active) renderTracks(active);
+  }
+
+  document.querySelectorAll("[data-sort]").forEach(function (el) {
+    el.addEventListener("click", function () { setSort(el.getAttribute("data-sort")); });
+  });
 
   function currentEntry() {
     const key = location.hash.replace(/^#\/?/, "");
@@ -176,5 +209,6 @@
   els.filter.addEventListener("input", function () { renderTracks(active); });
   window.addEventListener("hashchange", route);
 
+  setSort(sortBy);
   route();
 })();

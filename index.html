@@ -45,14 +45,19 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 14 15.5l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
             <input type="search" id="filter" placeholder="Filter by band or song" autocomplete="off" aria-label="Filter by band or song">
           </label>
+          <div class="sort-toggle" role="group" aria-label="Sort by">
+            <span class="sort-label">Sort by</span>
+            <button type="button" class="sort-btn" data-sort="artist">Band</button>
+            <button type="button" class="sort-btn" data-sort="title">Song</button>
+          </div>
           <span class="track-count" id="trackCount"></span>
         </div>
 
         <div class="track-table" role="table" aria-label="Tracklist">
           <div class="track-row track-head" role="row">
             <span role="columnheader" class="col-num">#</span>
-            <span role="columnheader" class="col-artist">Band</span>
-            <span role="columnheader" class="col-title">Song</span>
+            <span role="columnheader" class="col-artist" data-sort-col="artist"><button type="button" class="head-sort" data-sort="artist">Band<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></span>
+            <span role="columnheader" class="col-title" data-sort-col="title"><button type="button" class="head-sort" data-sort="title">Song<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></span>
             <span role="columnheader" class="col-link">Official video</span>
             <span role="columnheader" class="col-link">Live</span>
           </div>
