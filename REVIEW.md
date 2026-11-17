@@ -27,7 +27,7 @@ How to fix an entry: edit `js/data.js`, then change `official` / `live` (URL) an
 - [ ] **Ecca Vandal – VERTICAL WORLDS**: official title has no "Official" label.
 - [ ] **Bearings – Comfort Company** / **Death Lens – Power**: official links judged by title style only.
 - [ ] **Witch Post – The Wolf**: live upload not verified as the band's.
-- [ ] **BABYMETAL – White Flame**: an upload titled "White Flame ー白炎ー" exists ([`9wvYi5dXU3Y`](https://www.youtube.com/watch?v=9wvYi5dXU3Y)) but its source is unclear, so it was not used.
+- [x] **BABYMETAL – White Flame**: official replaced with [`9wvYi5dXU3Y`](https://www.youtube.com/watch?v=9wvYi5dXU3Y) (supplied by you). The previous audio link `CPu5Et4bpSc` was broken.
 - [ ] **A Day To Remember – Bad Blood**: live is fan footage. Other fan clips: [`ZYcBJkRTmbQ`](https://www.youtube.com/watch?v=ZYcBJkRTmbQ), [`hbfg_HA1Nzc`](https://www.youtube.com/watch?v=hbfg_HA1Nzc).
 - [ ] **Coheed and Cambria – Searching for Tomorrow**: live is fan footage. Alternative: [`H_ufzUcDCCw`](https://www.youtube.com/watch?v=H_ufzUcDCCw).
 - [ ] **Sleep Theory – III**: a full show "Live in London" [`XRnNgwqHzO0`](https://www.youtube.com/watch?v=XRnNgwqHzO0) may include it (not confirmed).
